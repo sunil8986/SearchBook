@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/Book-Search-Site
 /.pnp
 .pnp.js
 portfolio-reference.txt
