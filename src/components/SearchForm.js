@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { useGlobalContext } from '../context_AppProvider'
 import { FaSearch } from 'react-icons/fa';
