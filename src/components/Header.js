@@ -1,11 +1,8 @@
 import React, {useRef, useEffect} from 'react';
 import Navbar from './Navbar'
-import { FaSearch } from 'react-icons/fa'
 import SearchForm from './SearchForm';
 
 const Header = () => {
-    const searchText = useRef('');
-
 
     return (
         <>
