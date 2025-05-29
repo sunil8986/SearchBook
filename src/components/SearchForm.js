@@ -10,7 +10,6 @@ const SearchForm = () => {
     const [inputValue, setInputValue] = useState('');
 
     const navigate = useNavigate();
-    const searchText = useRef('');
 
     const {books, resultTitle, setSearchTerm, setResultTitle} = useGlobalContext();
 
@@ -19,8 +18,6 @@ const SearchForm = () => {
     console.log("setSearchTerm:", setSearchTerm);
     console.log("resultTitle:", resultTitle);
     }, [books, setSearchTerm, resultTitle ]);
-
-    // useEffect(() => searchText.current.focus(), []);
 
     function handleSubmit(e){
         e.preventDefault();
@@ -31,7 +28,7 @@ const SearchForm = () => {
         } else {
             setSearchTerm(inputValue);
         }
-        setInputValue(''); // <-- clear the input
+        setInputValue(''); 
         navigate("/booklist");
     }
 
